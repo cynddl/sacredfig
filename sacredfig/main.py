@@ -8,7 +8,7 @@ import matplotlib.transforms as mtrans
 cm2in = 1 / 2.54
 
 
-def add_labels_to_axes(fig, axes, fontsize=9, Δx=-0.25, Δy=0.1):
+def add_labels_to_axes(fig: plt.Figure, axes: list[plt.Axes], fontsize: int = 9, Δx: float = -0.25, Δy: float = 0.1) -> None:
     """Add bold numbers (A, B, C, etc.) on the top left of every matplotlib axis."""
 
     for n, ax in enumerate(axes):
@@ -23,7 +23,7 @@ def add_labels_to_axes(fig, axes, fontsize=9, Δx=-0.25, Δy=0.1):
         )
 
 
-def restyle_axis(ax, *, lineprops: dict = None, artistprops: dict = None):
+def restyle_axis(ax: plt.Axes, *, lineprops: dict = {}, artistprops: dict = {}) -> None:
     if lineprops:
         plt.setp(ax.lines, **lineprops)
 

@@ -1,3 +1,4 @@
+from re import A
 import matplotlib.pyplot as plt
 import numpy as np
 import pytest
@@ -49,5 +50,26 @@ def test_plot_with_panels():
 
         # Add labels a. and b.
         add_labels_to_axes(fig, axes)
+
+        return fig
+
+
+@pytest.mark.mpl_image_compare
+def test_plot_boxplot():
+    import seaborn as sns
+    sns.reset_orig()
+
+    iris = sns.load_dataset("iris")
+
+    with plt.style.context(sacredfig.style):
+
+        fig, ax = plt.subplots(figsize=(6 * cm2in, 6 * cm2in), dpi=150)
+        ax.grid(False, which='major', axis='x')
+
+        ax.boxplot([iris.sepal_length.values, iris.sepal_width.values],
+                labels=['Sepal length', 'Sepal width'])
+
+        ax.set_box_aspect(1)
+        ax.set(xlabel="Attribute", ylabel="Empirical distribution", ylim=(0, 10));
 
         return fig

@@ -25,7 +25,6 @@ include=["sacredfig/sacredfig.mplstyle"]
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
 matplotlib = "^3.6"
-seaborn = {version="^0.10", optional=true}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
@@ -36,6 +35,8 @@ pre-commit = "^3.4"
 tox = "*"
 numpy = "^1.24"
 pytest-mpl = "^0.17.0"
+seaborn = "^0.13"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
