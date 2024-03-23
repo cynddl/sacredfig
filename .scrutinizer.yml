@@ -1,12 +1,7 @@
 build:
   environment:
-    python: 3.11
+    python: 3.11.8
   nodes:
-    tests:
-      dependencies:
-        before:
-          - "pip install --upgrade 'tox>=4.6,<5'"
-          - "pip install --upgrade 'poetry-core>=1.4,<2'"
     analysis:
       project_setup:
         override:
