@@ -38,7 +38,7 @@ style = {
     "lines.linewidth": 1.0,  # line width in points
     "lines.linestyle": "-",  # solid line
     "lines.color": "b",  # has no affect on plot(); see axes.prop_cycle
-    "lines.marker": None,  # the default marker
+    "lines.marker": "",  # the default marker
     "lines.markerfacecolor": "auto",  # the default markerfacecolor
     "lines.markeredgecolor": "auto",  # the default markeredgecolor
     "lines.markeredgewidth": 0.5,  # the line width around the marker symbol

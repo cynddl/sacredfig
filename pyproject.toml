@@ -35,6 +35,7 @@ mypy = "^1.5"
 pre-commit = "^3.4"
 tox = "*"
 numpy = "^1.24"
+pytest-mpl = "^0.17.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
