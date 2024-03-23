@@ -73,3 +73,25 @@ def test_plot_boxplot():
         ax.set(xlabel="Attribute", ylabel="Empirical distribution", ylim=(0, 10));
 
         return fig
+
+@pytest.mark.mpl_image_compare
+def test_plot_boxplot_seaborn():
+    from sacredfig.seaborn import boxplot, stripplot
+
+    import seaborn as sns
+    sns.reset_orig()
+    plt.style.use(sacredfig.style)
+
+    iris = sns.load_dataset("iris")
+
+    fig, ax = plt.subplots(figsize=(6 * cm2in, 6 * cm2in), dpi=150)
+    boxplot(data=iris, ax=ax, width=0.4, fliersize=0)
+
+    np.random.seed(0)
+    stripplot(data=iris, ax=ax)
+
+    ax.set(ylim=(0, 8))
+    ax.set_box_aspect(1)
+
+    fig.autofmt_xdate()
+    return fig

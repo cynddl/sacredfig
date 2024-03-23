@@ -28,7 +28,8 @@ def restyle_axis(ax: plt.Axes, *, lineprops: dict = {}, artistprops: dict = {}) 
         plt.setp(ax.lines, **lineprops)
 
     if artistprops:
-        plt.setp(ax.artists, **artistprops)
+        plt.setp(ax.patches, **artistprops)
+        plt.setp(ax.collections, **artistprops)
 
 
 # See <https://matplotlib.org/stable/tutorials/introductory/customizing.html> for all

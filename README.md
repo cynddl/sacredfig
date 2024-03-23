@@ -5,7 +5,7 @@
 [![pypi](https://img.shields.io/pypi/v/sacredfig.svg)](https://pypi.org/project/sacredfig/)
 [![python](https://img.shields.io/pypi/pyversions/sacredfig.svg)](https://pypi.org/project/sacredfig/)
 [![Build Status](https://github.com/cynddl/sacredfig/actions/workflows/tests.yml/badge.svg)](https://github.com/cynddl/sacredfig/actions)
-[![codecov](https://codecov.io/gh/cynddl/sacredfig/branch/main/graphs/badge.svg?branch=main)](https://codecov.io/github/cynddl/sacredfig?branch=main)
+[![codecov](https://codecov.io/github/cynddl/sacredfig/graph/badge.svg?token=MTYJW99MPZ)](https://codecov.io/github/cynddl/sacredfig)
 [![Code Quality](https://img.shields.io/scrutinizer/g/cynddl/sacredfig.svg)](https://scrutinizer-ci.com/g/cynddl/sacredfig/?branch=main)
 
 </div>
